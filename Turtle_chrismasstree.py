@@ -1,0 +1,38 @@
+# This code uses turtle module for drawing chrismass tree
+def chrismass_tree(a):
+	import turtle
+	turtle.color('white')
+	turtle.bgcolor('black')
+	turtle.hideturtle()
+	turtle.begin_fill()
+	turtle.left(60)
+	turtle.forward(30)
+	for i in range(6):
+		turtle.right(60)
+		turtle.forward(30)
+		if i != 5:
+			turtle.left(120)
+			turtle.forward(30)
+	turtle.end_fill()
+	turtle.color('white')
+	turtle.begin_fill()
+	for i in range(3):
+		turtle.forward(500)
+		turtle.right(120)
+	turtle.color('green')
+	turtle.end_fill()
+	turtle.color('white')
+	turtle.forward(500)
+	turtle.right(120)
+	turtle.forward(150)
+	turtle.left(90)
+	turtle.begin_fill()
+	turtle.forward(200)
+	turtle.right(90)
+	turtle.forward(200)
+	turtle.right(90)
+	turtle.forward(200)
+	turtle.color('brown')
+	turtle.end_fill()
+	turtle.done()
+c=chrismass_tree('x')
